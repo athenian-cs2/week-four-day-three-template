@@ -79,7 +79,7 @@ public class MyMain {
 
         System.out.println();
         System.out.println("Bubble Sort Tests");
-        System.out.println(Arrays.toString(new int[] {6, 1, 3, 8, 2, 9})); // [1, 2, 3, 6, 8, 9]
-        System.out.println(Arrays.toString(new int[] {12, 5, 23, 74, 12, 86, 2})); // [2, 5, 12, 23, 74, 86]
+        System.out.println(Arrays.toString(bubbleSort(new int[] {6, 1, 3, 8, 2, 9}))); // [1, 2, 3, 6, 8, 9]
+        System.out.println(Arrays.toString(bubbleSort(new int[] {12, 5, 23, 74, 12, 86, 2}))); // [2, 5, 12, 12, 23, 74, 86]
     }
 }
