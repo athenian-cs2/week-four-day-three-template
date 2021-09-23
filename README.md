@@ -1,4 +1,4 @@
-# Week Four Day Two: Arrays
+# Week Four Day Three: More Array Algorithms
 
 This is a repository where you can write your code for today. You can also take notes in here if you wish. Please submit (commit and push) your code at the end of class, but note that **your code will not be graded for correctness**. 
 

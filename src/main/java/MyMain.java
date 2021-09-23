@@ -1,95 +1,85 @@
 import java.util.Arrays;
 
 public class MyMain {
-    // Arrays Basics Problem 1:
-    // Write a method addArrays3() that takes two int arrays of size 3 as input,
-    // and outputs an int array of size 3 that is the "sum" of the two arrays
-    // (i.e. the first element in our outputted array is the sum of the first
-    // elements in the two input arrays, and so on).
-    // Example:
-    //    int[] arr1 = {1, 3, 5};
-    //    int[] arr2 = {2, 4, 6};
-    //    int[] arr3 = addArrays3(arr1, arr2); // arr3 = [3, 7, 11]
-    public static int[] addArrays3(int[] arr1, int[] arr2) {
+    // Write a method that prints out all the even numbers in an array backwards
+    // Ex: printEvensBackwards([1, 2, 3, 4, 5, 6]) =>
+    //     6
+    //     4
+    //     2
+    public static void printEvensBackwards(int[] arr) {
         // REPLACE THIS WITH YOUR CODE
-        return null;
+        return;
     }
 
-    // Arrays Basics Problem 2:
-    // Next, write a method average3() that takes an int array of size 3 as input,
-    // and outputs a double array of size 3, where each element of that array is
-    // equal to the average of the values in the inputted array.
-    // Example:
-    // int[] arr1 = {1, 3, 5};
-    // double[] arr2 = average3(arr1); // arr2 = [3.0, 3.0, 3.0]
-    public static double[] average3(int[] arr) {
+    // Next, write a method that checks if an array is sorted in
+    // strictly increasing order (i.e. each element must be greater
+    // than the previous element)
+    // Ex: isIncreasing([1, 2, 3, 4, 5, 6]) => true
+    //     isIncreasing([1, 1, 3, 6, 7]) => false (because 1 is not > 1)
+    //     isIncreasing([1, 2, 3, 2, 4, 5, 8]) => false
+    public static boolean isIncreasing(int[] arr) {
         // REPLACE THIS WITH YOUR CODE
-        return null;
+        return false;
     }
 
-    // Iteration Problem 1:
-    // Write a method sum() that takes an int array of any size as input,
-    // and outputs the sum of all of the values in the array.
-    // Example:
-    // int[] nums = {1, 6, 2, 6, 8, 2, 3, 9, 3};
-    // int x = sum(nums); // x = 40
-    public static int sum(int[] arr) {
+    // (Maybe Optional):
+    // Write a method that checks if an array is "balanced". An array
+    // is balanced if the first and last values differ by at most 2, and
+    // if the second and second to last values differ by at most 2, and so on
+    // Ex: isBalanced([1, 2, 3, 2, 1]) => true
+    //     isBalanced([1, 2, 3, 4, 1, -1]) => true
+    //     isBalanced([1, 2, 3, 7, 2, 1]) => false (because 7 - 3 > 2)
+    public static boolean isBalanced(int[] arr) {
         // REPLACE THIS WITH YOUR CODE
-        return -1;
+        return false;
     }
 
-    // Iteration Problem 2:
-    // Next, write a method max() that takes an int array of any size as input,
-    // and outputs the largest number in the array
-    // Example:
-    // int[] nums = {1, 6, 2, 6, 8, 2, 3, 9, 3};
-    // int x = max(nums); // x = 9
-    public static int max(int[] arr) {
+    // Write a method that takes an array and checks if it contains
+    // any duplicate values
+    // Ex: containsDuplicates([1, 2, 3, 2, 1]) => true
+    //     containsDuplicates([7, 2, 3, 4, 1, 5]) => false
+    public static boolean containsDuplicates(int[] arr) {
         // REPLACE THIS WITH YOUR CODE
-        return -1;
+        return false;
     }
 
-    // Challenge Problem:
-    // Write a method makeRandomArray() outputs an int array of random numbers.
-    // The method takes three inputs: the first input corresponds to the desired
-    // size of the array, the second input is the smallest number that may be generated
-    // and the last input is the largest number that may be generated (inclusive)
-    // Example:
-    // makeRandomArray(10, 1, 5) => [4, 2, 3, 1, 5, 3, 4, 4, 1, 2]
-    public static int[] makeRandomArray(int size, int lowest, int biggest) {
+    // Sorting:
+    // Implement the bubble sort algorithm that we discussed in class
+    // to sort our code
+    // This algorithm returns the sorted array
+    public static int[] bubbleSort(int[] arr) {
         // REPLACE THIS WITH YOUR CODE
-        return null;
+        return arr;
     }
 
 
     public static void main(String[] args) {
-        System.out.println("addArrays3 Tests:");
-        int[] z = addArrays3(new int[] {-1, 6, 3}, new int[] {7, -6, 12} );
-        System.out.println(Arrays.toString(z)); // [6, 0, 15]
+        System.out.println("printEvensBackwards Tests:");
+        printEvensBackwards(new int[] {1, 2, 3, 4, 5, 6});
+        // 6
+        // 4
+        // 2
 
         System.out.println();
-        System.out.println("average3 Tests:");
-        double[] x = average3(new int[] {2, 4, 6});
-        System.out.println(Arrays.toString(x)); // [4.0, 4.0, 4.0]
-
-        double[] y = average3(new int[] {7, 3, 21});
-        System.out.println(Arrays.toString(y)); // [10.333333333333334, 10.333333333333334, 10.333333333333334]
+        System.out.println("isIncreasing Tests:");
+        System.out.println(isIncreasing(new int[] {1, 2, 3, 4, 5, 6})); // true
+        System.out.println(isIncreasing(new int[] {1, 1, 3, 6, 7})); // false (because 1 is not > 1)
+        System.out.println(isIncreasing(new int[] {1, 2, 3, 2, 4, 5, 8})); // false
 
         System.out.println();
-        System.out.println("sum Tests:");
-        int[] nums = {1, 6, 2, 6, 8, 2, 3, 9, 3};
-        int[] nums2 = {-1, -6, -2, -6, -8, -2, -3, -9, -3};
-        System.out.println(sum(nums)); // 40
-        System.out.println(sum(nums2)); // -40
+        System.out.println("isBalanced Tests:");
+        System.out.println(isBalanced(new int[] {1, 2, 3, 2, 1})); // true
+        System.out.println(isBalanced(new int[] {1, 2, 3, 4, 1, -1})); //true
+        System.out.println(isBalanced(new int[] {1, 2, 3, 7, 2, 1})); // false (because 7 - 3 > 2)
 
         System.out.println();
-        System.out.println("max Tests:");
-        System.out.println(max(nums)); // 9
-        System.out.println(max(nums2)); // -1
+        System.out.println("containsDuplicates Tests:");
+        System.out.println(containsDuplicates(new int[] {1, 2, 3, 2, 1})); // true
+        System.out.println(containsDuplicates(new int[] {7, 2, 3, 4, 1, 5})); // false
 
         System.out.println();
-        System.out.println("makeRandomArray Tests:");
-        System.out.println(Arrays.toString(makeRandomArray(10, 1, 5)));
-        // random, but could be: [4, 2, 3, 1, 5, 3, 4, 4, 1, 2]
+        System.out.println("Bubble Sort Tests");
+        System.out.println(Arrays.toString(new int[] {6, 1, 3, 8, 2, 9})); // [1, 2, 3, 6, 8, 9]
+        System.out.println(Arrays.toString(new int[] {12, 5, 23, 74, 12, 86, 2})); // [2, 5, 12, 23, 74, 86]
     }
 }
